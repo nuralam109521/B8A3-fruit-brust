@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@800&family=Kanit:wght@400;700;800&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                'primary-color': '#F85559',
+                'secondary-color': '#121212',
+            }
+            }
+        }
+        }
+    </script>
+
+    <style>
+        .Lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <section>
+
+    </section>
+
+    <section class="md:container md:mx-auto pt-24">
+        <div class="flex flex-col md:flex-row text-center md:text-left justify-between">
+            <div>
+                <h3 class="text-pic-color text-4xl font-bold">Deal of the day</h3>
+                <p class="py-3 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col text-center">
+                        <span class="countdown font-mono text-4xl font-bold pb-3">
+                            <span style="--value:29;"></span> :
+                        </span>
+                        Days
+                    </div> 
+                    <div class="flex flex-col text-center">
+                        <span class="countdown font-mono text-4xl font-bold pb-3">
+                        <span style="--value:15;"></span> :
+                        </span>
+                        Hours
+                    </div> 
+                    <div class="flex flex-col text-center">
+                        <span class="countdown font-mono text-4xl font-bold pb-3">
+                            <span style="--value:25;"></span> :
+                        </span>
+                        </span>
+                        Minutes
+                    </div> 
+                    <div class="flex flex-col text-center">
+                        <span class="countdown font-mono text-4xl font-bold pb-3">
+                            <span style="--value:08;"></span>
+                        </span>
+                        Seconds
+                    </div>
+                  </div>
+            </div>
+        </div>
+      
+        <div class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="text-center gap-x-2.5 w-64 h-auto">
+                    <div class="card bg-base-100 drop-shadow-md">
+                        <figure class=" pt-10">
+                            <img src="images/fruit6.png" alt="Apples" class="h-36"/>
+                        </figure>
+                        <div class="card-body items-center text-center text-2xl font-bold py-6">
+                            <p>12.90$ - 18.85$</p>
+                        </div>
+                    </div>
+                    <h3 class="pt-6">Apples</h3>
+                    <div class="rating rating-base rating-half py-5 text-lg">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                        <h3 class="text-primary-color text-lg font-bold py-4">Details</h3>
+                </div>
+
+                <div class="text-center gap-x-2.5 w-64 h-auto">
+                    <div class="card bg-base-100 drop-shadow-md">
+                        <figure class="pt-10">
+                            <img src="images/fruit7.png" alt="Orange" class="h-36"/>
+                        </figure>
+                        <div class="card-body items-center text-center text-2xl font-bold py-6">
+                            <p>12.90$ - 18.85$</p>
+                        </div>
+                    </div>
+
+                    <h3 class="pt-6">Orange</h3>
+                    <div class="rating rating-base rating-half py-5">
+                        <input type="radio" name="rating-11" class="rating-hidden" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                        <h3 class="text-primary-color text-lg font-bold py-4">Details</h3>
+                </div>
+
+                <div class="text-center gap-x-2.5 w-64 h-auto">
+                    <div class="card bg-base-100 drop-shadow-md">
+                        <figure class="pt-10">
+                            <img src="images/fruit8.png" alt="Red Dragon" class="h-36"/>
+                        </figure>
+                        <div class="card-body items-center text-center text-2xl font-bold py-6">
+                            <p>12.90$ - 18.85$</p>
+                        </div>
+                    </div>
+                    <h3 class="pt-6">Red Dragon</h3>
+                    <div class="rating rating-base rating-half py-5">
+                        <input type="radio" name="rating-12" class="rating-hidden" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                        <h3 class="text-primary-color text-lg font-bold py-4">Details</h3>
+                </div>
+
+                <div class="text-center gap-x-2.5 w-64 h-auto">
+                    <div class="card bg-base-100 drop-shadow-md">
+                        <figure class="pt-10">
+                            <img src="images/fruit9.png" alt="Banana" class="h-36"/>
+                        </figure>
+                        <div class="card-body items-center text-center text-2xl font-bold py-6">
+                            <p>12.90$ - 18.85$</p>
+                        </div>
+                    </div>
+
+                    <h3 class="pt-6">Banana</h3>
+                    <div class="rating rating-base rating-half py-5">
+                        <input type="radio" name="rating-13" class="rating-hidden" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                        <h3 class="text-primary-color text-lg font-bold py-4">Details</h3>
+                </div>
+            </div>
+
+            <div class="hero-content text-center text-neutral-content py-16">
+                <button class="btn bg-primary-color border-none text-white">Shop All</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <button class="btn text-center justify-center" onclick="my_modal_3.showModal()">Details</button>
+        <dialog id="my_modal_3" class="modal">
+            <form method="dialog" class="modal-box text-center justify-center">
+                <img class="mf-25" src="images/fruit6.png">
+                <h3 class="font-bold text-lg">Apples</h3>
+                <p>Professional employees are there for you pic the most <br> amazing and fresh fruits.</p>
+
+                <div class="rating rating-base rating-half py-5">
+                    <input type="radio" name="rating-11" class="rating-hidden" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" checked />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                </div>
+
+                <div class="hero-content text-center text-neutral-content">
+                    <button class="btn bg-primary-color border-none text-white">Close</button>
+                    <button class="btn bg-primary-color border-none text-white">Buy Now</button>
+                </div>
+            </form>
+        </dialog>
+
+
+       
+
+    </section>
+</body>
+</html>
